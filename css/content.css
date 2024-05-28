@@ -1,0 +1,165 @@
+.content {
+    min-width: 900px;
+    padding: 45px;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: var(--total-black);
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 235px;
+}
+
+.progress__title {
+    font-size: 14px;
+    color: var(--color-text-additional);
+    line-height: 16px;
+}
+
+.progress__percent {
+    font-size: 12px;
+    color: var(--color-text-caption_2);
+}
+
+.progress__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__bar {
+    background-color: #E6E9ED;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+}
+
+.progress__cover-bar {
+    background-color: var(--color-primary);
+    width: 80%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.habbits {
+    border-radius: 10px;
+}
+
+.habbit__item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--total-white);
+    margin-bottom: 12px;
+}
+.habbit__item-right {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.habbit__day {
+    font-size: 14px;
+    padding: 20px 40px;
+    background-color: var(--bg-additional-color);
+    border-right: 1px solid #E7EBFB;
+    font-weight: 500;
+    min-width: 150px;
+}
+
+.habbit__comment {
+    font-size: 16px;
+    color: var(--color-text-additional);
+    font-weight: 600;
+    background-color: var(--total-white);
+}
+
+.habbit__delete {
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    padding: 5px;
+}
+
+.habbit__delete:hover {
+    background-color: var(--botton-color);
+}
+
+input {
+    border: var(--border);
+    padding: 10px 20px;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-size: 14px;
+    border-radius: 9px;
+    display: block;
+    width: 100%;
+}
+
+input::placeholder{
+        color: var(--color-text-caption);
+}
+
+input:focus {
+    outline: 1.5px solid var(--color-primary);
+}
+
+
+.habbit__form {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    font-size: 16px;
+    color: var(--color-text-additional);
+    font-weight: 600;
+    background-color: var(--total-white);
+    position: relative;
+}
+
+.input--icon {
+    padding-left: 45px;
+
+}
+.input__icon {
+    position: absolute;
+    top: 8px;
+    left:20px;
+}
+
+
+.primary-button {
+    margin-left: auto;
+    background-color: var(--botton-color);
+    border-radius: 9px;
+    font-family: 'Comfortaa', cursive, sans-serif;
+    font-size: 13px;
+    line-height: 14px;
+    color: var(--color-primary);
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #dddbfd;
+}
+

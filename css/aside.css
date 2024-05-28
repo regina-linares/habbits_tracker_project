@@ -1,0 +1,59 @@
+aside {
+    background-color: var(--bg-additional-color);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.menu__item {
+    border-radius: 14px;
+    background-color: var(--total-white);
+    box-shadow: var(--box-shadow1);
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.menu__item:hover{
+    background-color: var(--color-primary);
+}
+
+.menu__item:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.menu__item_active {
+        background-color: var(--color-primary);
+}
+
+.menu__item_active img {
+        filter: brightness(0) invert(1);
+}
+
+.menu__add {
+    border-radius: 14px;
+    height: 45px;
+    width: 45px;
+    border: var(--border);
+        cursor: pointer;
+}
+
+.menu__add:hover {
+    background-color: var(--botton-color);
+}

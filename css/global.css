@@ -1,0 +1,26 @@
+:root {
+    --bg-main-color: #F3F6FD;
+    --color-primary: #5051F9;
+    --color-text: #000000;
+    --color-text-additional: #23235F;
+    --color-text-caption: #8899A8;
+    --color-text-caption_2: #768396;
+    --bg-additional-color: #FBFAFF;
+    --botton-color: #EDECFE;
+    --total-black: #000000;
+    --total-white: #ffffff; 
+    --border-color: #4D5064;
+    --border: 1.5px solid #E7EBFB;
+    --box-shadow1: 0px 8px 14px 0px #3E6BE01F;
+    --box-shadow: 0px 8px 14px 12px #3838380D;
+}
+
+body {
+    background-color: var(--bg-main-color);
+    font-family: 'Comfortaa', cursive, sans-serif;
+}
+
+.app {
+    display: flex;
+}
+
