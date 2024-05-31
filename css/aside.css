@@ -38,11 +38,11 @@ aside {
     filter: brightness(0) invert(1);
 }
 
-.menu__item_active {
+.menu__item--active {
         background-color: var(--color-primary);
 }
 
-.menu__item_active img {
+.menu__item--active img {
         filter: brightness(0) invert(1);
 }
 

@@ -48,7 +48,8 @@ h1 {
 
 .progress__cover-bar {
     background-color: var(--color-primary);
-    width: 80%;
+    transition: all 0.5s;
+    width: 0;
     height: 100%;
     border-radius: 4px;
 }
@@ -61,21 +62,22 @@ main {
     border-radius: 10px;
 }
 
-.habbit__item {
+.habbits__item {
     display: flex;
     align-items: center;
     border-radius: 10px;
     background: var(--total-white);
     margin-bottom: 12px;
 }
-.habbit__item-right {
+
+.habbits__item-right {
     padding: 0 24px;
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.habbit__day {
+.habbits__day {
     font-size: 14px;
     padding: 20px 40px;
     background-color: var(--bg-additional-color);
@@ -84,14 +86,14 @@ main {
     min-width: 150px;
 }
 
-.habbit__comment {
+.habbits__comment {
     font-size: 16px;
     color: var(--color-text-additional);
     font-weight: 600;
     background-color: var(--total-white);
 }
 
-.habbit__delete {
+.habbits__delete {
     margin-left: auto;
     cursor: pointer;
     border-radius: 3px;
@@ -102,7 +104,7 @@ main {
     padding: 5px;
 }
 
-.habbit__delete:hover {
+.habbits__delete:hover {
     background-color: var(--botton-color);
 }
 
@@ -116,16 +118,20 @@ input {
     width: 100%;
 }
 
-input::placeholder{
-        color: var(--color-text-caption);
+input::placeholder {
+    color: var(--color-text-caption);
 }
 
 input:focus {
     outline: 1.5px solid var(--color-primary);
 }
 
+input.error {
+border: 1px solid red;
+}
 
-.habbit__form {
+
+.habbits__form {
     display: flex;
     gap: 14px;
     width: 100%;
@@ -140,10 +146,11 @@ input:focus {
     padding-left: 45px;
 
 }
+
 .input__icon {
     position: absolute;
     top: 8px;
-    left:20px;
+    left: 20px;
 }
 
 
@@ -162,4 +169,3 @@ input:focus {
 .primary-button:hover {
     background-color: #dddbfd;
 }
-
