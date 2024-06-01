@@ -155,7 +155,6 @@ border: 1px solid red;
 
 
 .primary-button {
-    margin-left: auto;
     background-color: var(--botton-color);
     border-radius: 9px;
     font-family: 'Comfortaa', cursive, sans-serif;
