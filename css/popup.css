@@ -11,8 +11,8 @@
 }
 
 
-.cover_hidden {
-    /* display: none; */
+.cover--hidden {
+    display: none;
 }
 
 .popup {
@@ -74,11 +74,11 @@ background: #6a6afb;
     filter: brightness(0) invert(1);
 }
 
-.icon_active {
+.icon--active {
     background: var(--color-primary);
 }
 
-.icon_active img {
+.icon--active img {
 filter: brightness(0) invert(1);
 }
 
