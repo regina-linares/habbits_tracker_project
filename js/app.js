@@ -1,4 +1,4 @@
-const loadHabbitsFromJSONFile = async () => {
+async function loadHabbitsFromJSONFile() {
   await fetch("./../data/demo.json")
     .then((res) => res.json())
     .then((data) => {
@@ -29,13 +29,14 @@ const page = {
   },
 };
 
-function loadData() {
+async function loadData() {
   const habbitsString = localStorage.getItem("HABBIT_KEY");
   const habbitArray = JSON.parse(habbitsString);
 
   if (Array.isArray(habbitArray)) {
     habbits = habbitArray;
   }
+    if (!habbits.length) await loadHabbitsFromJSONFile();
 }
 
 function saveData() {
@@ -121,14 +122,14 @@ function rerenderContent(activeHabbit) {
     element.innerHTML = `<div class="habbits__day"> День ${
       Number(index) + 1
     }</div>
-                    <div class="habbits__item-right">
-                        <div class="habbits__comment">${
-                          activeHabbit.days[index].comment
-                        }</div>
-                        <button class="habbits__delete" onclick='deleteDay(${index})'>
-                            <img src="./assets/images/delete.svg" alt="">
-                        </button>
-                    </div>`;
+      <div class="habbits__item-right">
+          <div class="habbits__comment">${
+            activeHabbit.days[index].comment
+          }</div>
+          <button class="habbits__delete" onclick='deleteDay(${index})'>
+              <img src="./assets/images/delete.svg" alt="">
+          </button>
+      </div>`;
     page.content.daysContainer.appendChild(element);
   }
   page.content.nextDay.innerHTML = `День ${activeHabbit.days.length + 1}`;
@@ -212,9 +213,8 @@ function addHabbit(event) {
 }
 
 /* init */
-(() => {
-  // loadHabbitsFromJSONFile();
-  loadData();
+(async () => {
+  await loadData();
   const hashId = Number(document.location.hash.replace('#', ''));
   const urlHabbitId = habbits.find(habbits => habbits.id == hashId)?.id;
   if (urlHabbitId) {
